@@ -10,6 +10,14 @@ import adsManager from "./assets/bodyLeftIcons/chart-simple-solid.svg";
 import bloodDonations from "./assets/bodyLeftIcons/droplet-solid.svg";
 import climateScienceCenter from "./assets/bodyLeftIcons/leaf-solid.svg";
 import events from "./assets/bodyLeftIcons/calendar-check-regular.svg";
+import story1 from "./assets/bodyMidReels/story-1.png";
+import story2 from "./assets/bodyMidReels/story-2.png";
+import story3 from "./assets/bodyMidReels/story-3.png";
+import story4 from "./assets/bodyMidReels/story-4.png";
+import profile1 from "./assets/bodyMidReels/profile-1.png";
+import profile2 from "./assets/bodyMidReels/profile-2.png";
+import profile3 from "./assets/bodyMidReels/profile-3.png";
+import profile4 from "./assets/bodyMidReels/profile-4.png";
 
 export const bodyLeftData = [
   {
@@ -60,5 +68,28 @@ export const bodyLeftData = [
   {
     img: events,
     label: "Events",
+  },
+];
+
+export const reels = [
+  {
+    storyImg: story1,
+    uploaderPic: profile1,
+    name: "John Hawkins",
+  },
+  {
+    storyImg: story2,
+    uploaderPic: profile2,
+    name: "Mitchell Edwards",
+  },
+  {
+    storyImg: story3,
+    uploaderPic: profile3,
+    name: "James Jones",
+  },
+  {
+    storyImg: story4,
+    uploaderPic: profile4,
+    name: "Vanessa Ann Sterling",
   },
 ];

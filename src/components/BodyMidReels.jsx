@@ -1,28 +1,22 @@
-import story1 from "../assets/bodyMidReels/member-2.png";
+import story1 from "../assets/bodyMidReels/story-1.png";
+import { reels } from "../bodyData";
+import BodyMidReel from "./BodyMidReel";
+import angleLeft from "/angle-left-solid.svg";
+import angleRight from "/angle-right-solid.svg";
 
 export default function BodyMidReels() {
   return (
-    <div className="px-7 bg-slate-700 my-2">
-      <ul className="flex">
-        <li className="card-container h-[250px] w-[140px] bg-slate-300 rounded-2xl py-3 mx-1 overflow-hidden relative">
-          <img
-            src={story1}
-            alt="story 1"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute w-10 top-4 left-4 h-10 rounded-full bg-blue-600 p-1 overflow-hidden">
-            <img
-              src={story1}
-              alt="Profile pic of the story uploader"
-              className="contain h-full w-full rounded-full"
-            />
-          </div>
-          <span className="block absolute bottom-4 left-4">Profile name</span>
-        </li>
-
-        <li className="card-container h-[250px] w-[140px] bg-slate-300 rounded-2xl py-3 mx-1"></li>
-        <li className="card-container h-[250px] w-[140px] bg-slate-300 rounded-2xl py-3 mx-1"></li>
-        <li className="card-container h-[250px] w-[140px] bg-slate-300 rounded-2xl py-3 mx-1"></li>
+    <div className="bg-slate-700 my-2 flex justify-center">
+      <ul className="flex relative">
+        {reels.map((data, index) => {
+          return <BodyMidReel reelData={data} key={index} />;
+        })}
+        <div className="absolute left-1 top-[50%] bg-slate-700 rounded-full w-11 h-11 opacity-90 flex items-center justify-center cursor-pointer hover:bg-slate-600">
+          <img src={angleLeft} alt="Angle left icon" />
+        </div>
+        <div className="absolute right-1 top-[50%] bg-slate-700 rounded-full w-11 h-11 opacity-90 flex items-center justify-center cursor-pointer hover:bg-slate-600">
+          <img src={angleRight} alt="Angle right icon" />
+        </div>
       </ul>
     </div>
   );
