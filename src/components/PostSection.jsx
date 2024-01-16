@@ -8,17 +8,14 @@ import woahIcon from "/face-surprise-solid.svg";
 import likeIcon from "/thumbs-up-solid.svg";
 import comment from "/comment-solid.svg";
 import share from "/share-solid.svg";
+import UserProfile from "./ui/UserProfile";
 
 export default function PostSection() {
   return (
     <div className="bg-slate-800 mx-7 rounded-lg">
       <div className="header flex justify-between items-center p-3 gap-1">
         <div className="w-11 flex-none">
-          <img
-            className="h-10 w-10 rounded-full object-cover"
-            src={myProfile}
-            alt="Profile picture of the user"
-          />
+          <UserProfile dimension={10} />
         </div>
         <div className="grow">
           <span className="font-bold text-slate-50 text-lg">
@@ -35,6 +32,10 @@ export default function PostSection() {
         <div className="rounded-full hover:bg-slate-700 cursor-pointer p-1">
           <img src={x} alt="Close button icon" className="h-5 w-5" />
         </div>
+      </div>
+
+      <div className="flex-wrap px-7 m-2">
+        <span className="text-wrap">Workout sesh everyday</span>
       </div>
 
       <div className="uploaded area">

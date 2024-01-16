@@ -1,4 +1,4 @@
-import profilePic from "/profile-pic.png";
+import profilePic from "/my-profile.jpeg";
 import friends from "./assets/bodyLeftIcons/user-group-solid.svg";
 import groups from "./assets/bodyLeftIcons/users-rectangle-solid.svg";
 import memories from "./assets/bodyLeftIcons/clock-solid.svg";

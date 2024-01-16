@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 import profilePic from "/profile-pic.png";
 import HeaderRightComponent from "./HeaderRightComponent";
+import UserProfile from "./ui/UserProfile";
 
 export default function HeaderRight() {
   return (
@@ -28,7 +29,7 @@ export default function HeaderRight() {
         <button className="h-11">
           {" "}
           <a href="">
-            <img className="h-12 rounded-full" src={profilePic} alt="" />
+            <UserProfile dimension="12" />
           </a>
         </button>
       </li>
